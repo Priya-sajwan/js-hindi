@@ -88,11 +88,11 @@
 //  console.log(username(9));
 
 
-const myArray = [2, 3, 4, 5]
+// const myArray = [2, 3, 4, 5]
 
-myarray.array.forEach(element => {
+// myarray.array.forEach(element => {
   
-});
+// });
 
 
 
