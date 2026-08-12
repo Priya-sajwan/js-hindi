@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chaii aur code</title>
+</head>
+<body style="background-color: black; color: blanchedalmond;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function addlanguage(langname){
+      const li =   document.createElement('li')
+      li.innerHTML = `${langname}`
+      document.querySelector('.language').  // or   const selector = document.querySelector('.language')
+       appendChild(li)                      //      selector.appendChild(li) 
+      
+            
+    }  
+    addlanguage("python")
+    addlanguage("java")
+//+++++++++++++++++++++ or ++++++++++++++++++++++++++=
+
+    function addlang(lang){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(lang)) // or const text = document.createTextNode(lang)
+                                                      //    li.appendChild(text)
+
+          document.querySelector('.language').appendChild(li) //  or   const selector = document.querySelector('.language')
+                                                              //        selector.appendChild(li) 
+        
+    }
+    addlang("c++")
+    addlang("js")
+  
+
+  // edit 
+
+  const secondlang = document.querySelector('li:nth-child(2)')
+//   console.log(secondlang);
+//    secondlang.innerHTML = "mojo"
+
+
+// // ++++++++++++++++++++or+++++++++++++++++++++++
+
+//  const secondlang = document.querySelector('li:nth-child(2)')
+ const newli = document.createElement('li')
+ newli.textContent = "mojo"
+secondlang.replaceWith(newli)
+
+
+// +++++++++++++++++++++ or +++++++++++++
+
+
+const firstlang = document.querySelector('li:first-child')
+firstlang.outerHTML = '<li>typescript</li>'
+
+//remove
+
+const lastlang = document.querySelector('li:last-child')
+lastlang.remove()
+</script>
+</html>
+
