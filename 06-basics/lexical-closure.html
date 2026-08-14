@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closureand chaii</title>
+</head>
+<body>
+    <script>
+        function makefunction() {
+            const name ="mozilla"
+            console.log("hii ", name)
+        function displayName() {
+            console.log(name);
+        }
+         return displayName; 
+        }
+
+        let myfunc =   makefunction();
+        myfunc()
+    </script>
+</body>
+</html>
